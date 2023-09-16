@@ -1,12 +1,13 @@
 # Instalācija
 ## Vajadzīgās programmas:
+    php 8
+        https://www.geeksforgeeks.org/how-to-install-php-in-windows-10/
 	Node.js
 	Composer
 	Git
 	7-zip
 	Sourcetree
-	Windows terminal
-
+	Windows terminal, no Microsoft Store
 
 Ar git cmd (Te varbūt vajadzēs katram ģenerēt savu token.): 
 ```
@@ -16,6 +17,7 @@ git clone https://github_pat_11BCCJ4TY0m2IlKxJwPs3p_pcvseImI2WTlJPYn8FV6x11kR4j5
 Atver Windows terminal CMD konsoli un atver projekta mapi ar cd komandu un palaid šīs komandas.
 ```
 npm install
+composer update --ignore-platform-reqs
 composer install
 php artisan serve
 ```
