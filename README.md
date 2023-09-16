@@ -6,7 +6,7 @@
 	Composer
 	Git
 	7-zip
-	Sourcetree
+	Sourcetree, nav obligāts
 	Windows terminal, no Microsoft Store
 
 Ar git cmd (Te varbūt vajadzēs katram ģenerēt savu token.): 
