@@ -1,9 +1,10 @@
 <?php
-
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +37,15 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+// Display the calendar template
+
+Route::get('/calendar', function () {
+    return Inertia::render('calendar');
+});
+Route::post('/calendar/new ',function(){
+    return Inertia::render('calendar');
+})->middleware(['auth', 'verified'])->name('/calendar');
+
+
