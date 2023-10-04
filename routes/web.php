@@ -41,11 +41,16 @@ require __DIR__.'/auth.php';
 
 // Display the calendar template
 
-Route::get('/calendar', function () {
+Route::get('/calendar/events', function () {
     return Inertia::render('calendar');
 });
-Route::post('/calendar/new ',function(){
+
+//
+Route::post('/company/create/event ',function(){
     return Inertia::render('calendar');
 })->middleware(['auth', 'verified'])->name('/calendar');
+Route::post('/company/create/post ',function(){
+    return Inertia::render('xxxxx');
+})->middleware(['auth', 'verified'])->name('xxxx');
 
 
