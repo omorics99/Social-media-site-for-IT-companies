@@ -3,6 +3,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticleGeneratorController;
 use Inertia\Inertia;
 
 
@@ -16,6 +17,7 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -36,21 +38,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/test', function() {
+    return view('test');
+ });
+
 require __DIR__.'/auth.php';
-
-
-// Display the calendar template
-
-Route::get('/calendar/events', function () {
-    return Inertia::render('calendar');
-});
-
-//
-Route::post('/company/create/event ',function(){
-    return Inertia::render('calendar');
-})->middleware(['auth', 'verified'])->name('/calendar');
-Route::post('/company/create/post ',function(){
-    return Inertia::render('xxxxx');
-})->middleware(['auth', 'verified'])->name('xxxx');
-
-

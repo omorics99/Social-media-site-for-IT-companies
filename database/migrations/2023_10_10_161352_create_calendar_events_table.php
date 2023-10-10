@@ -11,24 +11,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('calendar_events', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('surname');
             $table->string('description');
-            $table->string('skills');//TODO Jāpardomā
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('location');
+            $table->timestamp('date');
             $table->unsignedBigInteger('company_id');
-            $table->unsignedBigInteger('region_id');
-            $table->rememberToken();
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
 
-            $table->foreign('company_id')->references('id')->on('companies');
-            $table->foreign('region_id')->references('id')->on('regions');
-        });
 
+            $table->foreign('company_id')->references('id')->on('companies');
+            $table->foreign('user_id')->references('id')->on('users');
+        });
     }
 
     /**
@@ -36,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('calendar_events');
     }
 };
