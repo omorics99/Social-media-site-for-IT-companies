@@ -1,10 +1,11 @@
 <?php
-
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleGeneratorController;
 use Inertia\Inertia;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -42,11 +43,3 @@ Route::get('/test', function() {
  });
 
 require __DIR__.'/auth.php';
-
-Route::get('/write', function () {
-    $title = '';
-    $content = '';
-    return view('writer', compact('title', 'content'));
-});
-
-Route::post('/write/generate', [ArticleGeneratorController::class, 'index']);
