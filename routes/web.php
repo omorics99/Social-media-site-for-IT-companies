@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticleGeneratorController;
 use Inertia\Inertia;
 
 /*
@@ -15,6 +16,7 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -35,4 +37,16 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/test', function() {
+    return view('test');
+ });
+
 require __DIR__.'/auth.php';
+
+Route::get('/write', function () {
+    $title = '';
+    $content = '';
+    return view('writer', compact('title', 'content'));
+});
+
+Route::post('/write/generate', [ArticleGeneratorController::class, 'index']);
