@@ -29,6 +29,21 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/calendar/events', function () {
+    return Inertia::render('calendar');
+});
+
+//
+Route::post('/company/create/event ',function(){
+    return Inertia::render('calendar');
+})->middleware(['auth', 'verified'])->name('/calendar');
+Route::post('/company/create/post ',function(){
+    return Inertia::render('xxxxx');
+})->middleware(['auth', 'verified'])->name('xxxx');
+
+
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
