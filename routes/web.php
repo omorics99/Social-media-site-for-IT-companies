@@ -42,7 +42,7 @@ Route::post('/company/create/post ',function(){
 })->middleware(['auth', 'verified'])->name('xxxx');
 
 
-
+//test
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
