@@ -9,9 +9,12 @@
 	Sourcetree, nav obligāts
 	Windows terminal, no Microsoft Store
 
-Ar git cmd (Te varbūt vajadzēs katram ģenerēt savu token.): 
+php.ini failā vajag atkomentēt attiecīgo DB 
+
 ```
-git clone https://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@github.com/omorics99/laravel-vue.git
+extension=curl
+extension=php_fileinfo.dll
+extension=php_pdo_sqlite.dll
 ```
 
 Atver Windows terminal CMD konsoli un atver projekta mapi ar cd komandu un palaid šīs komandas.
