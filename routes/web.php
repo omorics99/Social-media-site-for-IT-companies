@@ -49,5 +49,13 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+Route::get('/chats', [App\Http\Controllers\ChatsController::class, 'index']);
+Route::post('/broadcast', [App\Http\Controllers\ChatsController::class, 'broadcast']);
+Route::post('/receive', [App\Http\Controllers\ChatsController::class, 'receive']);
+
+Route::get('/chat', [App\Http\Controllers\ChatsController::class, 'index']);
+Route::get('/messages', [App\Http\Controllers\ChatsController::class, 'fetchMessages']);
+Route::post('/messages', [App\Http\Controllers\ChatsController::class, 'sendMessage']);
+
 
 require __DIR__.'/auth.php';
