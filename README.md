@@ -6,7 +6,7 @@
 	Composer
 	Git
 	7-zip
-	Sourcetree, nav obligāts
+	GitHub Desktop, nav obligāts
 	Windows terminal, no Microsoft Store
 
 php.ini failā vajag atkomentēt attiecīgo DB 
