@@ -4,7 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-
+use App\Http\Controllers\FullCalendarController;
+use App\Http\Controllers\EventController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,15 +33,19 @@ Route::get('/dashboard', function () {
 Route::get('/calendar/events', function () {
     return Inertia::render('calendar');
 });
-
-//
+Route::post('/follow-event', [FullCalendarController::class, 'followEvent']);
+Route::post('/unfollow-event', [FullCalendarController::class, 'unfollowEvent'])->name('unfollow.event');
+Route::middleware('auth')->get('/calendar/followedEvents',  [FullCalendarController::class, 'getFollowerCount'])->name('followedEvents');
+Route::get('/calendar/events', [FullCalendarController::class, 'index']);
+Route::post('/fullcalendar-ajax', [FullCalendarController::class, 'ajax']);
+Route::get('/calendar/getAuthor/{eventId}', [FullCalendarController::class, 'getAuthor']);
 Route::post('/company/create/event ',function(){
     return Inertia::render('calendar');
 })->middleware(['auth', 'verified'])->name('/calendar');
 Route::post('/company/create/post ',function(){
     return Inertia::render('xxxxx');
 })->middleware(['auth', 'verified'])->name('xxxx');
-
+Route::get('/user-followed-events', [FullCalendarController::class, 'getUserFollowedEvents']);
 
 
 
