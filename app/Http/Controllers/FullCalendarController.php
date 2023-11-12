@@ -122,20 +122,20 @@ class FullCalendarController extends Controller
                     $event->user_id = $user->id; // Assign the user ID to the event
 
                     $event->save();
-
+                    Log::info('Event saved', ['event_id' => $event->id]);
                     DB::commit();
 
                     return response()->json($event, 201);
 
                 case 'update':
-                    $validated = $request->validate([
-                        'id' => 'required|exists:events,id',
-                        'title' => 'required',
-                        'description'=> 'required',
-                        'location'=>'required',
-                        'start' => 'required|date',
-                        'end' => 'required|date|after_or_equal:start',
-                    ]);
+                        $validated = $request->validate([
+                            'id' => 'required|exists:events,id',
+                            'title' => 'required',
+                            'description' => 'required',
+                            'location' => 'required',
+                            'start' => 'required|date',
+                            'end' => 'required|date|after_or_equal:start',
+                        ]);
 
                     $event = Event::find($validated['id']);
 
@@ -145,6 +145,7 @@ class FullCalendarController extends Controller
                     }
 
                     $updated = $event->update($validated);
+                    Log::info('Event update status', ['updated' => $updated]);
 
                     if ($updated) {
                         DB::commit();

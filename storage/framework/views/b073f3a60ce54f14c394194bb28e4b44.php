@@ -4,6 +4,7 @@
     <title>Kalendārs</title>
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <style>
@@ -47,6 +48,7 @@
         .modal-content button {
             margin-bottom: 10px;
         }
+        
     </style>
 </head>
 <body class="bg-gray-100 p-4">
@@ -63,8 +65,11 @@
                 <form id="formContent">
                     <input type="text" id="eventTitle" placeholder="Event Title" class="border border-gray-300 rounded p-2 block w-full">
                     <input type="text" id="eventDescription" placeholder="Event Description" class="border border-gray-300 rounded p-2 block w-full">
-                    <input type="datetime-local" id="eventDate" class="eventDateTime border border-gray-300 rounded p-2 block w-full">
-                    <input type="datetime-local" id="eventEndDate" class="eventDateTime border border-gray-300 rounded p-2 block w-full">
+                    <input type="date" id="eventStartDate" placeholder="Start Date" class="border border-gray-300 rounded p-2 block w-full">
+                    <input type="time" id="eventStartTime" placeholder="Start Time" class="border border-gray-300 rounded p-2 block w-full">
+
+                    <input type="date" id="eventEndDate" placeholder="End Date" class="border border-gray-300 rounded p-2 block w-full">
+                    <input type="time" id="eventEndTime" placeholder="End Time" class="border border-gray-300 rounded p-2 block w-full">
                     <input type="text" id="eventLocation" placeholder="Event Location" class="border border-gray-300 rounded p-2 block w-full">
                     <span class="author-label" id="eventAuthor"></span>
                     <span class="followers-label" id="eventFollowers"></span>
@@ -143,32 +148,55 @@ $(document).ready(function() {
         selectHelper: true,
         
         select: function(start, end) {
-            // Format the dates correctly
-            var startDate = moment(start).format('YYYY-MM-DD[T]HH:mm');
-            var endDate = moment(end).subtract(1, 'seconds').format('YYYY-MM-DD[T]HH:mm');
-            console.log("Formatted Start Date: ", startDate);
-            console.log("Formatted End Date: ", endDate);
-            // Set the formatted dates into the datetime-local inputs
-            $('#eventDate').val(startDate);
-            $('#eventEndDate').val(endDate);
+        var startDate = moment(start).format('YYYY-MM-DD');
+        var startTime = moment(start).format('HH:mm');
+        var endDate = moment(end).subtract(1, 'seconds').format('YYYY-MM-DD');
+        var endTime = moment(end).subtract(1, 'seconds').format('HH:mm');
 
-            // Clear other fields and show the modal
-            $('#eventTitle').val('');
-            $('#eventDescription').val('');
-            $('#eventLocation').val('');
-            $('#eventAuthor').text('');
-            $('#eventFollowers').text('');
-            $('#saveEvent').show();
-            $('#deleteEvent').hide();
-            $('#eventForm').css('display', 'block');
+        $('#eventStartDate').val(startDate);
+        $('#eventStartTime').val(startTime);
+        $('#eventEndDate').val(endDate);
+        $('#eventEndTime').val(endTime);
+
+        // Clear other fields and show the modal
+        $('#eventTitle').val('');
+        $('#eventDescription').val('');
+        $('#eventLocation').val('');
+        $('#eventAuthor').text('');
+        $('#eventFollowers').text('');
+        $('#saveEvent').show();
+        $('#deleteEvent').hide();
+        $('#eventForm').css('display', 'block');
         },
 
 
         eventDrop: function(event, delta, revertFunc) {
             var start = event.start.format('YYYY-MM-DDTHH:mm');
-            var end = event.end.format('YYYY-MM-DDTHH:mm');
-            updateEvent(event.id, start, end, event.title);
+            var end = (event.end == null) ? start : event.end.format('YYYY-MM-DDTHH:mm');
+
+            // Ensure the event object contains title, description, and location
+            $.ajax({
+                url: SITEURL + "/fullcalendar-ajax",
+                type: "POST",
+                data: {
+                    id: event.id,
+                    title: event.title, // Make sure this exists in the event object
+                    description: event.description, // Make sure this exists in the event object
+                    location: event.location, // Make sure this exists in the event object
+                    start: start,
+                    end: end,
+                    type: 'update'
+                },
+                success: function(response) {
+                    toastr.success("Event Updated Successfully", 'Event');
+                },
+                error: function(xhr) {
+                    toastr.error('Failed to update the event. Error: ' + xhr.responseText, 'Event Update Failed');
+                    revertFunc(); // Reverts the event to its original position
+                }
+            });
         },
+
         eventClick: function(event) {
             var isUserEventCreator = (event.user_id == loggedInUserId);
 
@@ -180,12 +208,15 @@ $(document).ready(function() {
             $('#eventDescription').val(event.description);
             $('#eventLocation').val(event.location);
 
-            // Format the dates for datetime-local input
-            var formattedStart = moment(event.start).format('YYYY-MM-DD[T]HH:mm');
-            var formattedEnd = moment(event.end).format('YYYY-MM-DD[T]HH:mm');
+            var formattedStart = moment(event.start).format('YYYY-MM-DD');
+            var formattedStartTime = moment(event.start).format('HH:mm');
+            var formattedEnd = moment(event.end).format('YYYY-MM-DD');
+            var formattedEndTime = moment(event.end).format('HH:mm');
 
-            $('#eventDate').val(formattedStart);
+            $('#eventStartDate').val(formattedStart);
+            $('#eventStartTime').val(formattedStartTime);
             $('#eventEndDate').val(formattedEnd);
+            $('#eventEndTime').val(formattedEndTime);
 
             // Load author information and event followers
             loadEventAuthor(event.id);
@@ -259,12 +290,14 @@ $(document).ready(function() {
     });
 
     function createOrUpdateEvent() {
-        var eventId = $('#eventForm').data('event-id'); // Get the event ID
+        
+        var eventId = $('#eventForm').data('event-id');
         var title = $('#eventTitle').val();
         var description = $('#eventDescription').val();
-        var start = new Date($('#eventDate').val()).toISOString();
-        var end = new Date($('#eventEndDate').val()).toISOString();
         var location = $('#eventLocation').val();
+
+        var start = $('#eventStartDate').val() + 'T' + $('#eventStartTime').val();
+        var end = $('#eventEndDate').val() + 'T' + $('#eventEndTime').val();
 
         // Check if this is a new event or an update
         if (eventId) {
