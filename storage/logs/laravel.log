@@ -23,7 +23,7 @@ Did you mean one of these?
 #2 C:\\xampp\\htdocs\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
 #3 C:\\xampp\\htdocs\\laravel-vue\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
 #4 {main}
-"}
+"} 
 [2023-09-16 15:16:28] local.ERROR: could not find driver (Connection: mysql, SQL: select * from information_schema.tables where table_schema = laravel and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 0): could not find driver (Connection: mysql, SQL: select * from information_schema.tables where table_schema = laravel and table_name = migrations and table_type = 'BASE TABLE') at C:\\xampp\\htdocs\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:801)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(755): Illuminate\\Database\\Connection->runQueryCallback()
@@ -92,7 +92,7 @@ Did you mean one of these?
 #33 C:\\xampp\\htdocs\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
 #34 C:\\xampp\\htdocs\\laravel-vue\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
 #35 {main}
-"}
+"} 
 [2023-09-16 15:43:41] local.ERROR: View [app] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [app] not found. at C:\\xampp\\htdocs\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php:137)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
@@ -148,7 +148,7 @@ Did you mean one of these?
 #50 C:\\xampp\\htdocs\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
 #51 C:\\xampp\\htdocs\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('...')
 #52 {main}
-"}
+"} 
 [2023-09-16 15:43:59] local.ERROR: View [app] not found. {"exception":"[object] (InvalidArgumentException(code: 0): View [app] not found. at C:\\xampp\\htdocs\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php:137)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
@@ -204,7 +204,7 @@ Did you mean one of these?
 #50 C:\\xampp\\htdocs\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
 #51 C:\\xampp\\htdocs\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('...')
 #52 {main}
-"}
+"} 
 [2023-10-29 18:05:46] local.ERROR: Class "Pusher\Pusher" not found {"exception":"[object] (Error(code: 0): Class \"Pusher\\Pusher\" not found at C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php:295)
 [stacktrace]
 #0 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php(284): Illuminate\\Broadcasting\\BroadcastManager->pusher(Array)
@@ -232,7 +232,7 @@ Did you mean one of these?
 #22 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #23 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #24 {main}
-"}
+"} 
 [2023-10-29 18:06:05] local.ERROR: Class "Pusher\Pusher" not found {"exception":"[object] (Error(code: 0): Class \"Pusher\\Pusher\" not found at C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php:295)
 [stacktrace]
 #0 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php(284): Illuminate\\Broadcasting\\BroadcastManager->pusher(Array)
@@ -260,7 +260,7 @@ Did you mean one of these?
 #22 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #23 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #24 {main}
-"}
+"} 
 [2023-10-29 18:06:17] local.ERROR: Class "Pusher\Pusher" not found {"exception":"[object] (Error(code: 0): Class \"Pusher\\Pusher\" not found at C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php:295)
 [stacktrace]
 #0 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php(284): Illuminate\\Broadcasting\\BroadcastManager->pusher(Array)
@@ -288,7 +288,7 @@ Did you mean one of these?
 #22 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #23 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #24 {main}
-"}
+"} 
 [2023-10-29 18:06:21] local.ERROR: Class "Pusher\Pusher" not found {"exception":"[object] (Error(code: 0): Class \"Pusher\\Pusher\" not found at C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php:295)
 [stacktrace]
 #0 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php(284): Illuminate\\Broadcasting\\BroadcastManager->pusher(Array)
@@ -316,7 +316,7 @@ Did you mean one of these?
 #22 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #23 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #24 {main}
-"}
+"} 
 [2023-10-29 18:06:32] local.ERROR: Class "Pusher\Pusher" not found {"exception":"[object] (Error(code: 0): Class \"Pusher\\Pusher\" not found at C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php:295)
 [stacktrace]
 #0 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php(284): Illuminate\\Broadcasting\\BroadcastManager->pusher(Array)
@@ -344,7 +344,7 @@ Did you mean one of these?
 #22 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #23 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #24 {main}
-"}
+"} 
 [2023-10-29 18:21:57] local.ERROR: Command "make:contoller" is not defined.
 
 Did you mean one of these?
@@ -406,7 +406,7 @@ Did you mean one of these?
 #2 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #3 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #4 {main}
-"}
+"} 
 [2023-10-29 18:32:35] local.ERROR: syntax error, unexpected token "extends" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1174237161 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -532,7 +532,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-10-29 18:32:55] local.ERROR: syntax error, unexpected token "class" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1401548294 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -658,7 +658,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-10-29 18:33:05] local.ERROR: syntax error, unexpected token "extends" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-849873950 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -784,7 +784,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-10-29 18:33:45] local.ERROR: Undefined variable $page {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-746279607 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -916,7 +916,7 @@ Did you mean one of these?
 #58 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #60 {main}
-"}
+"} 
 [2023-10-29 18:35:28] local.ERROR: syntax error, unexpected token "extends" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-804816134 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -1042,7 +1042,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-11-02 12:36:51] local.ERROR: syntax error, unexpected token "extends" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1471388865 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -1168,7 +1168,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-11-02 12:36:58] local.ERROR: syntax error, unexpected token "extends" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-822609939 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -1294,7 +1294,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-11-02 12:38:20] local.ERROR: syntax error, unexpected token "class" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1285693294 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -1420,7 +1420,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-11-02 12:38:20] local.ERROR: syntax error, unexpected token "class" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-6970931 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -1546,7 +1546,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-11-02 12:38:21] local.ERROR: syntax error, unexpected token "class" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1217346776 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -1672,7 +1672,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-11-02 12:38:21] local.ERROR: syntax error, unexpected token "class" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-955492776 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -1798,7 +1798,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-11-02 12:38:22] local.ERROR: syntax error, unexpected token "class" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1842902387 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -1924,7 +1924,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-11-02 12:38:38] local.ERROR: Undefined variable $page {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1913963748 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -2056,7 +2056,7 @@ Did you mean one of these?
 #58 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #60 {main}
-"}
+"} 
 [2023-11-02 12:38:38] local.ERROR: Undefined variable $page {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-709871692 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -2188,7 +2188,7 @@ Did you mean one of these?
 #58 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #60 {main}
-"}
+"} 
 [2023-11-02 12:38:39] local.ERROR: Undefined variable $page {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-706463821 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -2320,7 +2320,7 @@ Did you mean one of these?
 #58 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #60 {main}
-"}
+"} 
 [2023-11-02 12:38:39] local.ERROR: Undefined variable $page {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-687737413 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -2452,7 +2452,7 @@ Did you mean one of these?
 #58 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #60 {main}
-"}
+"} 
 [2023-11-02 12:38:39] local.ERROR: Undefined variable $page {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-514888673 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -2584,7 +2584,7 @@ Did you mean one of these?
 #58 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #60 {main}
-"}
+"} 
 [2023-11-02 12:57:35] local.ERROR: Undefined variable $page {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-126107663 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -2716,7 +2716,7 @@ Did you mean one of these?
 #58 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #60 {main}
-"}
+"} 
 [2023-11-02 12:57:50] local.ERROR: syntax error, unexpected token "extends" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-977998419 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -2842,7 +2842,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-11-02 12:57:51] local.ERROR: syntax error, unexpected token "extends" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1909477721 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -2968,7 +2968,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-11-02 12:57:52] local.ERROR: syntax error, unexpected token "extends" {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-354137233 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -3094,7 +3094,7 @@ Did you mean one of these?
 #55 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #56 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #57 {main}
-"}
+"} 
 [2023-11-02 12:59:43] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-316929799 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -3228,7 +3228,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:00:11] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1304673040 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -3362,7 +3362,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:01:30] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1764076313 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -3496,7 +3496,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:03:13] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-865119661 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -3630,7 +3630,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:03:43] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-973870729 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -3764,7 +3764,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:04:38] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1881143743 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -3898,7 +3898,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:05:13] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-816731037 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -4032,7 +4032,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:06:03] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-231243759 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -4166,7 +4166,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:06:39] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-809194553 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -4300,7 +4300,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:28:55] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-363032098 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -4434,7 +4434,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:29:39] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-2026565373 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -4568,7 +4568,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:30:28] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1905370263 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -4702,7 +4702,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:30:35] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1358797414 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#345</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -4836,7 +4836,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:33:47] local.ERROR: View [layouts.AuthenticatedLayout] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-516688714 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -4970,7 +4970,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:33:47] local.ERROR: View [layouts.AuthenticatedLayout] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1649997327 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -5104,7 +5104,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:33:47] local.ERROR: View [layouts.AuthenticatedLayout] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1435100651 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -5238,7 +5238,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:35:04] local.ERROR: View [layouts.AuthenticatedLayout] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-717952340 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -5372,7 +5372,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:35:05] local.ERROR: View [layouts.AuthenticatedLayout] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-920764999 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -5506,7 +5506,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:39:32] local.ERROR: View [layouts.AuthenticatedLayout] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-390615045 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -5640,7 +5640,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:39:33] local.ERROR: View [layouts.AuthenticatedLayout] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1809743740 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -5774,7 +5774,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:39:58] local.ERROR: View [layouts.AuthenticatedLayout] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-751857135 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -5908,7 +5908,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 13:39:59] local.ERROR: View [layouts.AuthenticatedLayout] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-660991091 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -6042,7 +6042,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 14:03:19] local.ERROR: View [layouts.AuthenticatedLayout] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-220034894 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -6176,7 +6176,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 14:03:19] local.ERROR: View [layouts.AuthenticatedLayout] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-818660626 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -6310,7 +6310,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 14:04:27] local.ERROR: View [layouts.AuthenticatedLayout] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-222374485 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -6444,7 +6444,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 14:16:32] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-410630624 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -6578,7 +6578,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 14:59:20] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-928788839 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -6712,7 +6712,7 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
 [2023-11-02 15:01:13] local.ERROR: View [layouts.app] not found. {"view":{"view":"C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\resources\\views\\chat.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-591002286 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -6846,4 +6846,4 @@ Did you mean one of these?
 #59 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #60 C:\\Users\\orega\\Documents\\HatchUpProject\\laravel-vue\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\orega\\\\...')
 #61 {main}
-"}
+"} 
