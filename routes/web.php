@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\FullCalendarController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\NewsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,8 +47,10 @@ Route::post('/company/create/post ',function(){
     return Inertia::render('xxxxx');
 })->middleware(['auth', 'verified'])->name('xxxx');
 Route::get('/user-followed-events', [FullCalendarController::class, 'getUserFollowedEvents']);
-
-
+Route::get('/news', function () {
+    return Inertia::render('NewsFeed');
+});
+Route::get('/news', [NewsController::class, 'index']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -90,7 +90,13 @@
                 </form>
             </div>
         </div>
+        <div id="app">
+            <news-feed></news-feed>
+        </div>
+    
+        <script src="<?php echo e(mix('/js/app.js')); ?>"></script>
     </div>
+
 
     <!-- Add a hidden input field to store the currently logged-in user's ID -->
     <input type="hidden" id="loggedInUserId" value="<?php echo e(Auth::user()->id); ?>">
@@ -138,7 +144,7 @@ $(document).ready(function() {
         header: {
             left: 'prev,next today',
             center: 'title',
-            right: 'month,agendaWeek,agendaDay'
+            right: 'month,agendaWeek,agendaDay,listMonth'
         },
         defaultView: 'month',
         editable: true,
