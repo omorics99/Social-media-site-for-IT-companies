@@ -42,8 +42,6 @@ Route::post('/company/create/post ',function(){
 })->middleware(['auth', 'verified'])->name('xxxx');
 
 
-//test
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -56,6 +54,13 @@ Route::post('/receive', [App\Http\Controllers\ChatsController::class, 'receive']
 Route::get('/chat', [App\Http\Controllers\ChatsController::class, 'index']);
 Route::get('/messages', [App\Http\Controllers\ChatsController::class, 'fetchMessages']);
 Route::post('/messages', [App\Http\Controllers\ChatsController::class, 'sendMessage']);
+
+Route::get('/about', function () {
+    return Inertia::render('About');
+});
+Route::get('/business', function () {
+    return Inertia::render('Business_landing');
+});
 
 
 require __DIR__.'/auth.php';
