@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('description');
             $table->unsignedBigInteger('company_id');
             $table->unsignedBigInteger('user_id');
-            $table->string('gallery')->nulable();//TODO Jāpadomā kā labāk izdarīt
-            $table->string('price')->nulable();
+            $table->string('gallery')->nullable();
+            $table->string('price')->nullable();
             $table->timestamps();
 
             $table->foreign('company_id')->references('id')->on('companies');
