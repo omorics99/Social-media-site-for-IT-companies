@@ -70,6 +70,13 @@ Route::get('/chat', [App\Http\Controllers\ChatsController::class, 'index']);
 Route::get('/messages', [App\Http\Controllers\ChatsController::class, 'fetchMessages']);
 Route::post('/messages', [App\Http\Controllers\ChatsController::class, 'sendMessage']);
 
+Route::get('/about', function () {
+    return Inertia::render('About');
+});
+Route::get('/business', function () {
+    return Inertia::render('Business_landing');
+});
+
 
 Route::get('/companies', [\App\Http\Controllers\CompanyController::class, 'index'])->name('companies.index');
 Route::get('/companies/create', [\App\Http\Controllers\CompanyController::class, 'create'])->name('companies.create');
