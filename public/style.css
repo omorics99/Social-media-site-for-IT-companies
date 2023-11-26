@@ -94,7 +94,7 @@ body {
     line-height: var(--bs-body-line-height);
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
+    background-color: black;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -7082,9 +7082,9 @@ textarea.form-control-lg {
     transform: translateY(-50%) !important;
 }
 
-.border {
-    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-}
+/*.border {*/
+/*    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;*/
+/*}*/
 
 .border-0 {
     border: 0 !important;
@@ -7459,9 +7459,9 @@ textarea.form-control-lg {
     margin: 1rem !important;
 }
 
-.m-4 {
-    margin: 1.5rem !important;
-}
+/*.m-4 {*/
+/*    margin: 1.5rem !important;*/
+/*}*/
 
 .m-5 {
     margin: 3rem !important;
@@ -7669,9 +7669,9 @@ textarea.form-control-lg {
     padding: 1rem !important;
 }
 
-.p-4 {
-    padding: 1.5rem !important;
-}
+/*.p-4 {*/
+/*    padding: 1.5rem !important;*/
+/*}*/
 
 .p-5 {
     padding: 3rem !important;
@@ -8029,10 +8029,10 @@ textarea.form-control-lg {
     color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-white {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
-}
+/*.text-white {*/
+/*    --bs-text-opacity: 1;*/
+/*    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;*/
+/*}*/
 
 .text-body {
     --bs-text-opacity: 1;
@@ -13829,7 +13829,7 @@ textarea.form-control-lg {
     background-clip: initial;
     border: 0 !important;
     margin-top: 1.5rem !important;
-    background-color: #fff;
+    background-color: #166534;
     box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
     border-radius: 6px !important;
 }
@@ -13843,9 +13843,10 @@ textarea.form-control-lg {
     color: #161c2d;
     word-wrap: break-word;
     box-sizing: border-box;
-    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    border-bottom: var(--bs-border-width) var(--bs-border-style) #16A34A !important;
     justify-content: space-between !important;
     padding: 1.5rem !important;
+    background-color: #166534;
 }
 .chat .top img {
     display: inline-block;
@@ -13865,6 +13866,7 @@ textarea.form-control-lg {
     box-sizing: border-box;
     overflow: hidden !important;
     margin-left: 1rem !important;
+    background-color: #166534;
 }
 .chat .top div p {
     display: block;
@@ -13879,7 +13881,7 @@ textarea.form-control-lg {
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-bottom: 0 !important;
-    color: #3c4858 !important;
+    color: #fff !important;
     font-family: var(--bs-font-sans-serif);
     line-height: 1.4;
     font-weight: 600;
@@ -13893,7 +13895,7 @@ textarea.form-control-lg {
     word-wrap: break-word;
     box-sizing: border-box;
     font-size: 0.875em;
-    color: #6c757d !important;
+    color: #fff !important;
 }
 .chat .messages {
     font-weight: var(--bs-body-font-weight);
@@ -13931,8 +13933,8 @@ textarea.form-control-lg {
     font-size: 0.875em;
     margin: 0.25rem;
     padding: 0.5rem 1rem !important;
-    color: #6c757d !important;
-    background-color: rgba(var(--bs-light-rgb), 1) !important;
+    color: #fff !important;
+    background-color: #16A34A !important;
     border-radius: var(--bs-border-radius) !important;
 }
 .chat .messages .message img {
@@ -13965,7 +13967,7 @@ textarea.form-control-lg {
     word-wrap: break-word;
     box-sizing: border-box;
     padding: 1rem 0 !important;
-    border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    border-top: var(--bs-border-width) var(--bs-border-style) #16A34A !important;
 }
 .chat .bottom input {
     float: left;
@@ -13989,7 +13991,7 @@ textarea.form-control-lg {
     display: inline-flex;
     text-align: center;
     cursor: pointer;
-    border: 1px solid #484848;
+    border: 4px solid #16A34A;
     border-radius: 5px;
     margin: 3px;
     width: 2.35rem;
