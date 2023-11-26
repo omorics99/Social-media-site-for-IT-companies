@@ -21,3 +21,7 @@ public/hot
 .env
 \vendor\*
 vendor\bin\phpunit.bat
+.env
+bootstrap/cache/services.php
+database/database.sqlite
+storage/logs/laravel.log
