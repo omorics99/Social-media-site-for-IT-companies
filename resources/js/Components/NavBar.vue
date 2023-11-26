@@ -23,10 +23,10 @@
                         <a href="/search" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Meklēšana</a>
                     </li>
                     <li>
-                        <a href="/register" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Rēģistrācija</a>
+                        <a href="/register" class="bg-green-800 text-white px-4 py-2 rounded-md hover:bg-green-600 ml-auto">Rēģistrācija</a>
                     </li>
                     <li>
-                        <a href="/login" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pieslēgties</a>
+                        <a href="/login" class="bg-green-800 text-white px-4 py-2 rounded-md hover:bg-green-600 ml-auto">Pieslēgties</a>
                     </li>
                 </ul>
             </div>

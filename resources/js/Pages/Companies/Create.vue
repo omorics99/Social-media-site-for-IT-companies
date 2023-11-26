@@ -45,40 +45,6 @@
     </div>
 </template>
 
-<!--<script>
-import HeaderComponent from "@/Components/NavBar.vue";
-import FooterComponent from "@/Components/Footer.vue";
-import {useForm} from "@inertiajs/vue3";
-
-export default {
-    props: ['phpVariable'],
-    components: {
-        HeaderComponent,
-        FooterComponent,
-    },
-    data() {
-        return {
-            form: {
-                name: '',
-                description: '',
-                image: null,
-                email: null,
-                adress: null,
-                website_link: null,
-                phone: null,
-            }
-        };
-    },
-    methods: {
-        handleImageChange(event) {
-            this.form.image = event.target.files[0];
-        },
-        submitForm() {
-            this.form.post(route('companies.store'));
-        },
-    }
-}
-</script>-->
 <script setup>
 import HeaderComponent from '/resources/js/Components/NavBar.vue';
 import FooterComponent from '/resources/js/Components/Footer.vue';

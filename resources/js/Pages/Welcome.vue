@@ -2,13 +2,13 @@
 <template>
     <div class="bg-black">
         <HeaderComponent></HeaderComponent>
-            <img src="@/images/home.jpg" class=""/>
+            <img src="@/images/home.jpg" class="h-1/3"/>
             <div class="relative container">
-                <div class="container mx-auto p-4 w-1/2 absolute bottom-10 right-10">
-                    <div class="p-6 rounded-lg bg-black text-white">
+                <div class="container mx-auto p-4 w-1/3 absolute bottom-10 right-0">
+                    <div class="p-6 pb-8 rounded-lg bg-black text-white">
                         <h1 class="text-2xl rounded-lg font-bold mb-4">ZenVue</h1>
                         <p class="text-white-700 mb-4">LocalTech Connect: vietējo inovāciju veicināšana</p>
-                        <a :href="'/about'" class="bg-green-800 text-white px-4 py-2 mt-4 rounded-md hover:bg-green-600">Par mums</a>
+                        <a :href="'/about'" class="bg-green-800 text-white px-4 py-2 mt-4rounded-md hover:bg-green-600">Par mums</a>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <h1 class="text-white text-center text-2xl">Powered by</h1>
-            <div class="container mx-auto p-8 flex justify-around w-1/2">
+            <div class="container mx-auto p-8 flex justify-around w-1/3">
                 <div class="p-6 w-1/3 flex items-center">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" alt="Vue 3 Logo" class="mx-auto mb-4">
                 </div>

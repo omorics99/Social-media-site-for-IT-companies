@@ -1,9 +1,9 @@
 <template>
-    <body class="bg-gray-800">
+    <body class="bg-gray-100">
     <HeaderComponent></HeaderComponent>
     <div class="container mx-auto min-h-screen">
-        <h1 class="text-3xl font-bold mb-4 mt-4 text-center text-2xl text-white">{{phpVariable.name}}</h1>
-        <div class="p-4 text-white">
+        <h1 class="text-3xl font-bold mb-4 mt-4 text-center text-2xl text-black">{{phpVariable.name}}</h1>
+        <div class="p-4 text-black">
             <div class="w-full max-w-lg mx-auto ">
                 <p class="">{{phpVariable.description}}</p>
                 <img src="@/images/logo.png" alt="Business Logo" class="w-20 h-auto mt-8">
