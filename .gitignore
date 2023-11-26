@@ -25,3 +25,6 @@ vendor\bin\phpunit.bat
 bootstrap/cache/services.php
 database/database.sqlite
 storage/logs/laravel.log
+storage/logs/laravel.log
+public/hot
+bootstrap/cache/services.php
