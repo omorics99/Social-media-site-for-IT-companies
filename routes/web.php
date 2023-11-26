@@ -11,8 +11,6 @@ use Inertia\Inertia;
 use App\Http\Controllers\FullCalendarController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\SearchController;
-use App\Http\Controllers\FullCalendarController;
-use App\Http\Controllers\EventController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes

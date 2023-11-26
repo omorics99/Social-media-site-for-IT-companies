@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Companies;
+use App\Models\Products;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -41,9 +42,10 @@ class CompanyController extends Controller
 
     public function show(Companies $company)
     {
-        //return view('companies.show', compact('company'));
+        $products = Products::all();
         return Inertia::render('Companies/Show', [
-            'phpVariable' => $company
+            'phpVariable' => $company,
+            'subProducts' => $products,
         ]);
     }
 

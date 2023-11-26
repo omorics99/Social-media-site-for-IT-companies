@@ -1,8 +1,8 @@
 <template>
     <body class="bg-gray-800">
     <HeaderComponent></HeaderComponent>
-    <div class="container mx-auto">
-        <h1 class="text-3xl font-bold mb-4 text-center text-2xl text-white">{{phpVariable.name}}</h1>
+    <div class="container mx-auto min-h-screen">
+        <h1 class="text-3xl font-bold mb-4 mt-4 text-center text-2xl text-white">{{phpVariable.name}}</h1>
         <div class="p-4 text-white">
             <div class="w-full max-w-lg mx-auto ">
                 <p class="">{{phpVariable.description}}</p>

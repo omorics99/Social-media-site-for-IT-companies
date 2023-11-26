@@ -1,17 +1,16 @@
 <template>
     <div class="bg-black">
     <HeaderComponent></HeaderComponent>
-        <div class="container mx-auto px-4 max-w-lg">
-            <h1 class="text-2xl font-bold mb-4 text-white text-center">Meklēšana</h1>
+        <div class="container mx-auto px-4 max-w-lg min-h-screen">
+            <h1 class="text-2xl font-bold mb-4 mt-4 text-white text-center">Meklēšana</h1>
             <form @submit.prevent="search" class="mb-8">
-                <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                 <div class="relative flex">
                     <select v-model="form.category" :value="category"  required class="p-4 ps-10 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 rounded-l-lg dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" type="button">
                         <option value="">Izvēlēties kategoriju &nbsp&nbsp&nbsp</option>
                         <option value="companies">Uzņēmumi</option>
                         <option value="products">Pakalpojumi</option>
                     </select>
-                    <input v-model="form.query" type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" placeholder="Meklēt, produktus, pakalpojumus, uzņēmumus" required>
+                    <input v-model="form.query" type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" placeholder="Meklēt..." required>
                     <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-green-800 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Meklēt</button>
                 </div>
             </form>
