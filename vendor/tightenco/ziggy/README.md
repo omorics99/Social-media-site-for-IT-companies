@@ -17,7 +17,7 @@ Ziggy supports all versions of Laravel from `5.4` onward, and all modern browser
     - [The `route()` helper](#the-route-helper)
     - [The `Router` class](#the-router-class)
     - [Route-model binding](#route-model-binding)
-    - [TypeScript](#typescript)
+    - [TypeScript support](#typescript-support)
 - [**Advanced Setup**](#advanced-setup)
     - [JavaScript frameworks](#javascript-frameworks)
     - [Vue](#vue)
@@ -31,11 +31,7 @@ Ziggy supports all versions of Laravel from `5.4` onward, and all modern browser
 
 ## Installation
 
-Install Ziggy in your Laravel app:
-
-```bash
-composer require tightenco/ziggy
-```
+Install Ziggy into your Laravel app with `composer require tightenco/ziggy`.
 
 Add the `@routes` Blade directive to your main layout (_before_ your application's JavaScript), and the `route()` helper function will now be available globally!
 
@@ -285,37 +281,9 @@ route('authors.photos.show', [{ id: 1, name: 'Jacob' }, photo]);
 // 'https://ziggy.test/authors/1/photos/714b19e8-ac5e-4dab-99ba-34dc6fdd24a5'
 ```
 
-#### TypeScript
+#### TypeScript support
 
-Ziggy includes TypeScript type definitions, and a helper command that can generate additional type definitions to enable route name and parameter autocompletion.
-
-To generate the route types, run Ziggy's Artisan command with the `--types` or `--types-only` option:
-
-```bash
-php artisan ziggy:generate --types
-```
-
-To make your IDE aware that Ziggy's `route()` helper is available globally, and to type it correctly, add a declaration like this in a `.d.ts` file somewhere in your project:
-
-```ts
-import routeFn from 'ziggy-js';
-
-declare global {
-    var route: typeof routeFn;
-}
-```
-
-If you don't have Ziggy's NPM package installed, add the following to your `jsconfig.json` or `tsconfig.json` to load Ziggy's types from the Composer vendor directory:
-
-```json
-{
-    "compilerOptions": {
-        "paths": {
-            "ziggy-js": ["./vendor/tightenco/ziggy"]
-        }
-    }
-}
-```
+Unofficial TypeScript type definitions for Ziggy are maintained by [benallfree](https://github.com/benallfree) as part of [Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped), and can be installed with `npm install @types/ziggy-js`.
 
 ## Advanced Setup
 
@@ -419,42 +387,22 @@ Now you can use `route()` anywhere in your Vue components and templates, like so
 
 #### React
 
-Ziggy includes a `useRoute()` hook to make it easy to use the `route()` helper in your React app:
-
-```jsx
-// PostsLink.js
-import React from 'react';
-import { useRoute } from 'ziggy-js';
-import { Ziggy } from './ziggy';
-
-export default function PostsLink() {
-    const route = useRoute(Ziggy);
-
-    return <a href={route('posts.index')}>Posts</a>;
-}
-```
-
-If you make the `Ziggy` config object available globally, you can use the `useRoute()` hook without importing and passing Ziggy's configuration to it every time:
+To use Ziggy with React, start by importing the `route()` function and your Ziggy config. Because the Ziggy config object is not available globally in this setup, you'll have to pass it to the `route()` function manually:
 
 ```js
 // app.js
+
+import route from 'ziggy';
 import { Ziggy } from './ziggy';
-globalThis.Ziggy = Ziggy;
+
+// ...
+
+route('home', undefined, undefined, Ziggy);
 ```
 
-```jsx
-// PostsLink.js
-import React from 'react';
-import { useRoute } from 'ziggy-js';
+We're working on adding a Hook to Ziggy to make this cleaner, but for now make sure you pass the configuration object as the fourth argument to the `route()` function as shown above.
 
-export default function PostsLink() {
-    const route = useRoute();
-
-    return <a href={route('posts.index')}>Posts</a>;
-}
-```
-
-> Note: If you include the `@routes` Blade directive in your views, Ziggy's configuration will already be available globally, so you don't need to import the `Ziggy` config object or make it available globally with `globalThis.Ziggy = Ziggy`—you can use the `useRoute()` hook exactly as shown in the `PostsLink.js` example directly above, without any other setup.
+> Note: If you include the `@routes` Blade directive in your views, the `route()` helper will already be available globally, including in your React app, so you don't need to import `route` or `Ziggy` anywhere.
 
 #### SPAs or separate repos
 

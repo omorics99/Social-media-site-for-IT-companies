@@ -27,17 +27,6 @@
       0 => 'Laravel\\Sanctum\\SanctumServiceProvider',
     ),
   ),
-  'laravel/socialite' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Socialite\\SocialiteServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Socialite' => 'Laravel\\Socialite\\Facades\\Socialite',
-    ),
-  ),
   'laravel/tinker' => 
   array (
     'providers' => 
@@ -64,13 +53,6 @@
     'providers' => 
     array (
       0 => 'Termwind\\Laravel\\TermwindServiceProvider',
-    ),
-  ),
-  'openai-php/laravel' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'OpenAI\\Laravel\\ServiceProvider',
     ),
   ),
   'spatie/laravel-ignition' => 
