@@ -8,13 +8,11 @@ use App\Models\Products;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-<<<<<<< Updated upstream
-
-=======
 use App\Http\Controllers\FullCalendarController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\SearchController;
->>>>>>> Stashed changes
+use App\Http\Controllers\FullCalendarController;
+use App\Http\Controllers\EventController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,8 +39,6 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-<<<<<<< Updated upstream
-=======
 Route::get('/calendar/events', function () {
     return Inertia::render('calendar');
 });
@@ -56,13 +52,24 @@ Route::post('/company/create/event ',function(){
     return Inertia::render('calendar');
 })->middleware(['auth', 'verified'])->name('/calendar');
 Route::get('/user-followed-events', [FullCalendarController::class, 'getUserFollowedEvents']);
+Route::post('/company/create/post ',function(){
+    return Inertia::render('xxxxx');
+})->middleware(['auth', 'verified'])->name('xxxx');
+Route::get('/user-followed-events', [FullCalendarController::class, 'getUserFollowedEvents']);
 
->>>>>>> Stashed changes
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+Route::get('/chats', [App\Http\Controllers\ChatsController::class, 'index']);
+Route::post('/broadcast', [App\Http\Controllers\ChatsController::class, 'broadcast']);
+Route::post('/receive', [App\Http\Controllers\ChatsController::class, 'receive']);
+
+Route::get('/chat', [App\Http\Controllers\ChatsController::class, 'index']);
+Route::get('/messages', [App\Http\Controllers\ChatsController::class, 'fetchMessages']);
+Route::post('/messages', [App\Http\Controllers\ChatsController::class, 'sendMessage']);
+
 
 Route::get('/companies', [\App\Http\Controllers\CompanyController::class, 'index'])->name('companies.index');
 Route::get('/companies/create', [\App\Http\Controllers\CompanyController::class, 'create'])->name('companies.create');
