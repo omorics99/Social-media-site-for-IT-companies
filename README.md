@@ -28,4 +28,10 @@ Atver otru Windows terminal CMD konsoli un projekta mapē palaid
 ```
 npm run dev
 ```
+Priekš datubāzes jāpalaiž migrācijas un seedotie dati.
+```
+php artisan migrate
+php artisan db:seed
+```
+
 Atver pirmās konsolē norādīto localhost linku. Visam vajadzētu darboties, ja parādās 500 server errors tad nav pievienoti .env faili.
