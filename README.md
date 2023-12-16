@@ -6,6 +6,8 @@ Projekts izstrādāts priekš LBTU biznesa inkubatora "Nozares izaicinājumi 4.c
 ## Izaicinājuma priekšvēsture: 
 Globālās savienojamības laikmetā ir ļoti svarīgi atpazīt un atbalstīt vietējos uzņēmumus, jo īpaši tehnoloģiju nozarē. Vietējie IT risinājumi un produkti bieži paliek nepamanīti globālā piedāvājuma jūrā, neskatoties uz to potenciālu apmierināt unikālas vietējās vajadzības. Lietotnes "LocalTech Connect" mērķis ir pārvarēt šo plaisu, nodrošinot platformu, kas demonstrē, savieno un pastiprina vietējās tehnoloģiskās inovācijas.
 
+## Programma sastāv no Vue3, TailWind v3 un Laravel 10
+
 # Instalācija
 ## Vajadzīgās programmas:
     php 8
