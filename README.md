@@ -1,3 +1,11 @@
+# Apraksts
+Projekts izstrādāts priekš LBTU biznesa inkubatora "Nozares izaicinājumi 4.ciklā"
+    Izaicinājums #3: "LocalTech Connect: vietējo inovāciju veicināšana"
+## Izaicinājuma apraksts: 
+"LocalTech Connect" izaicinājums aicina studentu komandas izveidot visaptverošu biznesa koncepciju un izstrādāt dinamisku tīmekļa lietojumprogrammu, kuras mērķis ir veicināt un veicināt vietējo IT risinājumu un produktu izaugsmi. Šī izaicinājuma mērķis ir stimulēt sadarbību starp vietējiem tehnoloģiju nodrošinātājiem, uzņēmējiem un patērētājiem, vienlaikus veicinot ekonomisko izaugsmi un kopienas attīstību.
+## Izaicinājuma priekšvēsture: 
+Globālās savienojamības laikmetā ir ļoti svarīgi atpazīt un atbalstīt vietējos uzņēmumus, jo īpaši tehnoloģiju nozarē. Vietējie IT risinājumi un produkti bieži paliek nepamanīti globālā piedāvājuma jūrā, neskatoties uz to potenciālu apmierināt unikālas vietējās vajadzības. Lietotnes "LocalTech Connect" mērķis ir pārvarēt šo plaisu, nodrošinot platformu, kas demonstrē, savieno un pastiprina vietējās tehnoloģiskās inovācijas.
+
 # Instalācija
 ## Vajadzīgās programmas:
     php 8
